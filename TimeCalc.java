@@ -8,7 +8,43 @@ public class TimeCalc {
         int totalhours = totalminutes / 60 ;
         int newhours = totalhours % 24 ;
         int newminutes = totalminutes - (totalhours * 60);
-        System.out.println(newhours + ":" + newminutes);
+
+        String minutesToPrint = "";
+        String hoursToPrint = "";
+        if(newhours < 10)
+        {
+            hoursToPrint = "0" + newhours;
+        }
+        if(totalhours >= 10){
+            hoursToPrint = "" + newhours;
+        }
+        if( newminutes < 10)
+        {
+            minutesToPrint = "0" + newminutes;
+        }
+        if(newminutes >= 10){
+            hoursToPrint = "" + newminutes;
+
+        }
+            System.out.println(hoursToPrint + ":" + minutesToPrint);
+
+        
+         
+        
+        
+        
+        // if(totalminutes < 10 && totalhours == 0)
+        // {
+        //     System.out.println("0" + newhours + ":0" + newminutes);
+        //     if(totalminutes < 10 && totalhours != 0)
+        //     {
+        //         System.out.println(newhours + ":" + newminutes);
+        //     }
+        // }
+        // else System.out.println(newhours + ":" + newminutes);
+
+
+        
 
     }
 }
