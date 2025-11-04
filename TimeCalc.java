@@ -15,7 +15,7 @@ public class TimeCalc {
         {
             hoursToPrint = "0" + newhours;
         }
-        if(totalhours >= 10){
+        if(newhours >= 10){
             hoursToPrint = "" + newhours;
         }
         if( newminutes < 10)
@@ -23,9 +23,9 @@ public class TimeCalc {
             minutesToPrint = "0" + newminutes;
         }
         if(newminutes >= 10){
-            hoursToPrint = "" + newminutes;
-
+            minutesToPrint = "" + newminutes;
         }
+
             System.out.println(hoursToPrint + ":" + minutesToPrint);
 
         
